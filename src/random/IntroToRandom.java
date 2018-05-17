@@ -5,6 +5,8 @@ package random;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
@@ -13,7 +15,9 @@ public class IntroToRandom {
 		//3. Now make r random. 
 		//   Create an object of the Random class
 		//	 use .nextInt() to get a random number
-		
+		Random gen = new Random();
+		int num = gen.nextInt(310) - 222;
+		JOptionPane.showMessageDialog(null, num);
 
 		//4. Limit the random number between 0 and 100
 

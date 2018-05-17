@@ -19,11 +19,29 @@ public class Validation {
 		// 2. On paper, write all the numbers that get printed when you run this class 10 times
 		
 		System.out.println(randomNumber);
+		
+		if(randomNumber == 0) {
+			JOptionPane.showMessageDialog(null, "You exist.");
+		}
+		if(randomNumber == 1) {
+			JOptionPane.showMessageDialog(null, "You create Carbon-Dioxide.");
+		}
+		if(randomNumber == 2) {
+			JOptionPane.showMessageDialog(null, "You.");
+		}
+		if(randomNumber == 3) {
+			JOptionPane.showMessageDialog(null, "You have eyes.");
+		}
+		if(randomNumber == 4) {
+			JOptionPane.showMessageDialog(null, "You increase the total population of the wo");
+		}
+
 
 		// 3. Use each value of randomNumber to give the user a random compliment.
 
 		// 4. Repeat all the code above 10 times
 		
 		// 5. Find someone to test out your program. They will like it :)
+		
 	}
 }
