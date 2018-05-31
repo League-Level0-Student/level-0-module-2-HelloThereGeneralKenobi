@@ -14,12 +14,18 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 
 AnimalFarm() {
-	/*
-	 * 1. Ask the user which animal they want, then play the sound of that
-	 * animal.
-	 */
-
-	/* 2. Make it so that the user can keep entering new animals. */
+	String answer = JOptionPane.showInputDialog("What animal to you want to become");
+	if (answer.equalsIgnoreCase("cow")) {
+		playMoo();
+	}
+	String answer1 = JOptionPane.showInputDialog("What animal to you want to become");
+	if (answer1.equalsIgnoreCase("duck")) {
+		playQuack();
+	}
+	String answer2 = JOptionPane.showInputDialog("What animal to you want to become");
+	if (answer2.equalsIgnoreCase("dog")) {
+		playWoof();
+	}
 }
 
 void playMoo() {
@@ -39,7 +45,6 @@ String mooFile = "moo.wav";
 String woofFile = "woof.wav";
 String meowFile = "meow.wav";
 String llamaFile = "llama.wav";
-
 
 /* Ignore this stuff */
 
